@@ -12,39 +12,39 @@
         <img  src="img/image/png/logo.png" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item--active">
-              <a>
+              <a class="link__nav link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">
+            <li  class="site-list__item">
+              <a class="link__nav link" href="photo.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="link__nav link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="link__nav link" href="#">
                 HTML Academy
               </a>
             </li>
           </ul>
-          <div class="main-nav__list user-list">
+          <div class="user-list__nav user-list">
             <a class="user-list__login" href="login.html">
-              <svg class="user-list__login-icon" width="22" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="user-list__toggle visually-hidden" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <svg class="user-list__login-icon user-list" width="22" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/>
                 <use xlink:href="img/sprite.svg#icon-login"></use>
               </svg>
-              Войти
+              <span class="visually-hidden"> Войти</span>
             </a>
           </div>
         </div>
@@ -95,9 +95,11 @@
             <li class="preferences__item">
               <div class="benefits">
                 <img class="img" src="img/image/jpg/photo-bridge1x 1.jpg" width="520" height="260" alt="Мост дьявола.">
-                <h3 class="benefits__title">Там есть <br>  мост дьявола </h3>
-                <p class="benefits__numbering">— №2 —</p>
-                <p class="benefits__description">Да,по нему можно пройти!  Если вы осмелитесь,  разумеется</p>
+                <div class="benefits__wrapper">
+                  <h3 class="benefits__title">Там есть <br>  мост дьявола </h3>
+                  <p class="benefits__numbering">— №2 —</p>
+                  <p class="benefits__description">Да,по нему можно пройти!  Если вы осмелитесь,  разумеется</p>
+                </div>
               </div>
             </li>
             <li class="preferences__item preferences__item--color">
