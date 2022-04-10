@@ -5,6 +5,7 @@
   line-height: 26px;
   text-align: center;
   color: @heading-text-color;
+  margin: 0;
 }
 
 .main-footer__copyright--text {
@@ -14,4 +15,35 @@
   line-height: 21px;
   text-align: center;
   color: @heading-text-color;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.main-footer__social {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 980px;
+  }
 }
