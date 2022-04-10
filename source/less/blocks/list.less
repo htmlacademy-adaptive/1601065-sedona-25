@@ -26,6 +26,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 255px 255px 255px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
 }
 
 .preferences__title {
@@ -52,4 +62,15 @@
 
 .preferences__item--color {
   background-color: @list-background;
+  text-align: center;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.preferences__item {
+  text-align: center;
+}
+
+.preferences__numbering {
+  margin: 0;
 }
