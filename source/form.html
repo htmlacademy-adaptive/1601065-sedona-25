@@ -61,49 +61,53 @@
       <p class="subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <section class="section__form--meta">
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <h2 class="text__subtitle">Представьтесь:</h2>
-        <fieldset class="catalog__filter--group">
-          <legend class="catalog__filter--title">Имя*:</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="text" name="name" placeholder="Имя">
-            </label>
-          </div>
-          <legend class="catalog__filter--title">Фамилия*:</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="text" name="name" placeholder="Фамилия">
-            </label>
-          </div>
-          <legend class="catalog__filter--title">Отчество:</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="text" name="name" placeholder="Отчество">
-            </label>
-          </div>
-        </fieldset>
-        <h2 class="text__subtitle">Контактная информация:</h2>
-        <fieldset class="catalog__filter--group">
-          <legend class="catalog__filter--title">Контактный телефон*::</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="number" name="telephone" placeholder="Введите телефон">
-            </label>
-          </div>
-          <legend class="catalog__filter--title">Электронная почта*::</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="number" name="e-mail" placeholder="Введите e-mail">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="catalog__filter--group">
+      <form class="catalog-filter__location catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="container">
+          <h2 class="text__subtitle">Представьтесь:</h2>
+          <fieldset class="catalog__filter--group">
+            <legend class="catalog__filter--title">Имя*:</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="text" name="name" placeholder="Имя">
+              </label>
+            </div>
+            <legend class="catalog__filter--title">Фамилия*:</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="text" name="name" placeholder="Фамилия">
+              </label>
+            </div>
+            <legend class="catalog__filter--title">Отчество:</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="text" name="name" placeholder="Отчество">
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="container">
+          <h2 class="text__subtitle">Контактная информация:</h2>
+          <fieldset class="catalog__filter--group">
+            <legend class="catalog__filter--title">Контактный телефон*::</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="number" name="telephone" placeholder="Введите телефон">
+              </label>
+            </div>
+            <legend class="catalog__filter--title">Электронная почта*::</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="number" name="e-mail" placeholder="Введите e-mail">
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <fieldset class="catalog__filter--group-location">
           <legend class="catalog__filter--title">Вaше oбщее впечатление:</legend>
           <ul class="catalog__filter--list">
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression" value="impression type"
+                <input class="control__input" type="radio" name="impression" value="impression type"
                   checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
@@ -111,63 +115,65 @@
             </li>
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression">
+                <input class="control__input" type="radio" name="impression">
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="impression">
+                <input class="control__input" type="radio" name="impression">
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog__filter--group">
+        <fieldset class="catalog__filter--group-location">
           <legend class="catalog__filter--title">Посещенные достопримечательности:</legend>
           <ul class="catalog__filter--list">
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="Мост дьявола"  checked>
+                <input class="control__input" type="checkbox" name="Мост дьявола"  checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
+                <input class="control__input" type="checkbox" name="Гора-Колокол" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="Слайд-парк" checked>
+                <input class="control__input" type="checkbox" name="Слайд-парк" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
             <li class="catalog__filter--item">
               <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="Красные скалы">
+                <input class="control__input" type="checkbox" name="Красные скалы">
                 <span class="control__mark"></span>
                 <span class="control__label">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog__filter--group">
-          <legend class="catalog__filter--title">Опишите свои эмоции:</legend>
-          <div class="catalog__filter">
-            <label class="catalog__filter--label">
-              <input class="catalog__filter--input" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги ">
-            </label>
-          </div>
-        </fieldset>
-        <button class="button button__to-apply" type="submit">Отправить отзыв</button>
-        <p class="subtitle">* — обязательные поля</p>
+        <div class="container__location container">
+          <fieldset class="catalog__filter--group-location">
+            <legend class="catalog__filter--title">Опишите свои эмоции:</legend>
+            <div class="catalog__filter">
+              <label class="catalog__filter--label">
+                <input class="catalog__filter--input" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги ">
+              </label>
+            </div>
+          </fieldset>
+          <button class="button button__to-apply" type="submit">Отправить отзыв</button>
+          <p class="subtitle">* — обязательные поля</p>
+        </div>
       </section>
     </form>
   </main>
