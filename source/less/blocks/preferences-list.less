@@ -1,0 +1,42 @@
+.preferences-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 255px 255px 255px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.preferences-list__title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: @heading-text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.preferences-list__description {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: @paragraph-text-color;
+  margin: 0;
+  padding: 0;
+}
+
+
+.preferences__numbering {
+  margin: 0;
+}
