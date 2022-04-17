@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,10 @@
       <a class="main-header__logo">
         <img src="img/image/png/logo.png" width="185" height="96" alt="Седона">
       </a>
-      <nav class="main-nav">
+        <nav class="main-nav--closed  main-nav--nojs main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -35,18 +38,6 @@
               </a>
             </li>
           </ul>
-          <div class="user-list__nav user-list">
-            <a class="user-list__login" href="login.html">
-              <button class="user-list__toggle visually-hidden" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <svg class="user-list__login-icon user-list" width="22" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2"/>
-                <use xlink:href="img/sprite.svg#icon-login"></use>
-              </svg>
-              <span class="visually-hidden"> Войти</span>
-            </a>
-          </div>
         </div>
       </nav>
     </header>
@@ -120,12 +111,12 @@
           </ul>
         </div>
       </section>
-      <section class="section__subscription section">
+      <section class="section">
         <h2 class="section__header">Заинтерисовались?</h2>
         <p class="section__description">
           Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
         </p>
-        <button class="button__title button" type="button">Найти гостиницу</button>
+        <button class="button" type="button">Найти гостиницу</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -135,7 +126,7 @@
         </div>
         <div class="main-footer__social">
           <p class="main-footer__hashtag">#visitsedona</p>
-          <b class="social-title visually-hidden">Давайте дружить!</b>
+          <b class="visually-hidden">Давайте дружить!</b>
           <ul class="social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -147,12 +138,13 @@
               <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
             </li>
           </ul>
-          <div class="main-footer__copyright">
-            <b class="main-footer__copyright--text">Разработано:</b>
-            <a class="main-footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
