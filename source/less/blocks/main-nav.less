@@ -40,6 +40,11 @@
   z-index: 2;
   background-color: #81b3d2;
 
+  @media (min-width: @mobile-width-only) {
+    position: absolute;
+    width: 100%;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     background-color: #ffffff;
@@ -49,6 +54,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    max-width: 1200px;
   }
 }
 
