@@ -39,6 +39,8 @@
   flex-direction: column;
   z-index: 2;
   background-color: #81b3d2;
+  position: absolute;
+  width: 100%;
 
   @media (min-width: @mobile-width-only) {
     position: absolute;
@@ -174,4 +176,10 @@
 .main-nav--nojs .user-list__item {
   display: block;
   background-color: #81b3d2;
+}
+
+.main-nav__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
