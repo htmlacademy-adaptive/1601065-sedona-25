@@ -4,12 +4,32 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    align-items: center;
   }
+}
+
+.social-list__item {
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__item:hover {
+  background-color: #669ec0;
+}
+
+.social-list__item:active {
+  background-color: rgba(84, 150, 189, 1);
 }

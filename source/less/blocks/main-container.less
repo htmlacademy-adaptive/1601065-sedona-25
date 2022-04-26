@@ -1,13 +1,51 @@
 .main-container__element-image {
   box-sizing: border-box;
-  background-image: url("../img/image/jpg/back-mobile.jpg");
+  background-image: url("../img/image/jpg/back.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 0 100%;
+  background-position: 50%;
   min-height: 389px;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/image/jpg/back.jpg");
+      background-size: 1199px 519px;
+      min-height: 518px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/image/jpg/back.jpg");
+      background-size: 1199px 519px;
+      min-height: 518px;
+    }
+  }
+}
+
+
+.main-container__item--registration {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

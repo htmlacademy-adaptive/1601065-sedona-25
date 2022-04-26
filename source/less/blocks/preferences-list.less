@@ -5,12 +5,12 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -19,10 +19,24 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   color: @heading-text-color;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-bottom: 16px;
+
+  @media (min-width: @mobile-width-only) {
+    text-align: left;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .preferences-list__description {
@@ -30,13 +44,29 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
+  text-align: left;
   color: @paragraph-text-color;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @mobile-width-only) {
+    text-align: left;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 
 .preferences__numbering {
   margin: 0;
+}
+
+.preferences-list__item {
+  background-image: url("../img/image/svg/icon-house.svg");
 }
