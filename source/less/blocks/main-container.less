@@ -21,7 +21,18 @@
       min-height: 518px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/image/jpg/back.jpg");
+      background-size: 1199px 519px;
+      min-height: 518px;
+    }
+  }
 }
+
 
 .main-container__item--registration {
   margin: 0;
