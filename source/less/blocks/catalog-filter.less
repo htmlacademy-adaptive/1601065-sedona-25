@@ -11,6 +11,13 @@
 }
 
 .catalog-filter__group-location {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 6%;
+  margin-right: 6%;
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -24,6 +31,8 @@
 
 .catalog-filter__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -34,4 +43,89 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.catalog-filter__text-subtitle {
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-top: 53px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.catalog-filter__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.catalog-filter__title {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.catalog-filter__input {
+  border: none;
+  background-color: #f2f2f2;
+  width: 280px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.catalog-filter__registration-telephone {
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.catalog-filter__registration-letter {
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.catalog-filter__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.catalog-filter__placeholder::placeholder {
+  color: #000000;
+}
+
+.catalog-filter__control-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.catalog-filter__control-input[type="radio"] + .catalog-filter__control-mark {
+  border-radius: 50%;
+}
+
+.catalog-filter__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
 }
