@@ -18,7 +18,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__item--active">
+            <a class="site-list__link site-list__item--active" href="index.html">
               Главная
             </a>
           </li>
@@ -106,7 +106,7 @@
         <fieldset class="catalog-filter__group-location">
           <legend class="catalog-filter__text-subtitle">Вaше oбщее впечатление:</legend>
           <ul class="catalog-filter__list">
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item catalog-filter__item-label">
               <label class="catalog-filter__control">
                 <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression" value="impression type"
                   checked>
@@ -114,14 +114,14 @@
                 <span class="catalog-filter__control-label">Скорее положительное</span>
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item catalog-filter__item-label">
               <label class="catalog-filter__control">
                 <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
                 <span class="catalog-filter__control-mark"></span>
                 <span class="catalog-filter__control-label">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="catalog-filter__item">
+            <li class="catalog-filter__item catalog-filter__item-label">
               <label class="catalog-filter__control">
                 <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
                 <span class="catalog-filter__control-mark"></span>
@@ -164,25 +164,22 @@
           </ul>
         </fieldset>
         <div class="catalog-filter__container">
-          <fieldset class="catalog-filter__group-location">
+          <fieldset class="catalog-filter__group-location catalog-filter__group-location-subtitle">
             <legend class="catalog-filter__text-subtitle">Опишите свои эмоции:</legend>
             <div class="catalog-filter__container">
               <label class="catalog-filter__label">
-                <input class="catalog-filter__input" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги ">
+                <input class="catalog-filter__input catalog-filter__input-container" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги ">
               </label>
             </div>
           </fieldset>
           <button class="catalog-filter__button--to-apply button" type="submit">Отправить отзыв</button>
-          <p class="catalog-filter__subtitle">* — обязательные поля</p>
+          <p class="catalog-filter__subtitle-button">* — обязательные поля</p>
         </div>
       </section>
     </form>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts">
-        <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007235.5937178007!2d-113.65259714230781!3d34.2833539188895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1650387988030!5m2!1sru!2sru"  allowfullscreen title="Карта Аризоны"></iframe>
-      </div>
       <div class="main-footer__social">
         <p class="main-footer__hashtag">#visitsedona</p>
         <b class="visually-hidden">Давайте дружить!</b>
