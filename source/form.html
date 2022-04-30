@@ -168,12 +168,14 @@
             <legend class="catalog-filter__text-subtitle">Опишите свои эмоции:</legend>
             <div class="catalog-filter__container">
               <label class="catalog-filter__label">
-                <input class="catalog-filter__input catalog-filter__input-container" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги ">
+                <input class="catalog-filter__input catalog-filter__input-container" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги" required>
               </label>
             </div>
           </fieldset>
-          <button class="catalog-filter__button--to-apply button" type="submit">Отправить отзыв</button>
-          <p class="catalog-filter__subtitle-button">* — обязательные поля</p>
+          <div class="catalog-filter__button-subtitle">
+            <button class="catalog-filter__button--to-apply button" type="submit">Отправить отзыв</button>
+            <p class="catalog-filter__subtitle-button">* — обязательные поля</p>
+          </div>
         </div>
       </section>
     </form>
@@ -222,15 +224,29 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
-  <div class="modal .modal-close">
-    <div class="modal-container modal-container__auth">
-      <section class="modal-container__content">
-        <h2 class="modal-container__title">Что-то пошло не так!</h2>
-        <p class="modal-container__subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-close-button button" type="button">
+  <div class="modal__close modal">
+    <div class="modal__container modal__container-auth">
+      <section class="modal__container-content">
+        <h2 class="modal__container-title">Что-то пошло не так!</h2>
+        <p class="modal__container-subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__close-button button" type="button">
           OK
           <span class="visually-hidden">Закрыть</span>
         </button>
+      </section>
+    </div>
+  </div>
+  <div class="modal__close modal">
+    <div class="modal__container modal__container-auth-content">
+      <section class="modal__container-content-auth">
+        <h2 class="modal__container-title-subtitle">Ваш отзыв отправлен!</h2>
+        <p class="modal__container-subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__container-div">
+          <button class="modal__button button" type="button">
+            Закрыть окно
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
       </section>
     </div>
   </div>
