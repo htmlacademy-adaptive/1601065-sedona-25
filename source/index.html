@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" sizes="32x32" href="favicon.ico.ico">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -66,7 +67,11 @@
                   <p class="benefits__numbering">— №1 —</p>
                   <p class="benefits__description"> Седона — не аттракцион   для туристов, там течёт  своя жизнь</p>
                 </div>
-                <img class="img" src="img/image/jpg/photo-city1x 1.jpg" width="320" height="260" alt="городок Sedona.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-city.jpg, img/image/jpg/photo-city@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/image/jpg/photo-city@1x.jpg, img/image/jpg/photo-city@1x@2x.jpg">
+                  <img class="img" src="img/image/jpg/photo-city1x 1.jpg"  srcset="img/image/jpg/photo-city@1x 1@2x.jpg" alt="городок Sedona.">
+                </picture>
               </div>
               <ul class="preferences-list">
                 <li class="preferences-list__item">
@@ -103,12 +108,16 @@
             </li>
             <li class="advantages__item advantages__item--location">
               <div class="advantages-container benefits">
-                <img class="img" src="img/image/jpg/photo-bridge1x 1.jpg" width="320" height="260" alt="Мост дьявола.">
                 <div class="benefits__wrapper">
-                  <h3 class="benefits__title">Там есть <br>  мост дьявола </h3>
+                  <h3 class="benefits__title">Там есть  мост дьявола </h3>
                   <p class="benefits__numbering">— №2 —</p>
                   <p class="benefits__description">Да,по нему можно пройти!  Если вы осмелитесь,  разумеется</p>
                 </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-bridge-desktop.jpg, img/image/jpg/photo-bridg-desktop@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/image/jpg/photo-bridge-tablet.jpg, img/image/jpg/photo-bridge-tablet@2x.jpg">
+                  <img class="img" src="img/image/jpg/photo-bridge1x 1.jpg"  srcset="img/image/jpg/photo-bridge@1x 1@2x.jpg" alt="Мост дьявола.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item--color">
@@ -172,12 +181,30 @@
             </li>
           </ul>
           <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <!-- <b class="copyright__text">Разработано:</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">HTML Academy</span>
-              <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="copyright__link-svg" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+              </svg> -->
+              <span class="logo">
+                <svg width="70" height="70">
+                  <use xlink:href="#ring"></use>
+                </svg>
+                html Aca
+              </span>
+              <svg style="display: none">
+                <symbol id="ring" viewBox="0 0 150 150">
+                  <g>
+                    <circle class="ring" fill="none"></circle>
+
+                    <path d="M33.442.524L.252 4.004v60.832l33.19 19.747L66.63 64.836V4.004L33.79.558l-.348-.035zM62.29 62.366L33.442 79.53 4.594 62.367V37.433L33.32 54.53l.046 3.097L13.66 45.9l-.028 3.007 19.783 11.89.05 3.18L13.69 52.213l-.028 3.008 19.783 11.89 19.972-11.95v-3.022l-.025.014V42.33l8.898-5.316v25.352h.002zm-.024-28.587l-7.893 4.65-3.643 2.147L33.355 30.24l-.03 3.008 14.853 8.83-.132.078-.32.19-2.11 1.243-12.26-7.297-.03 3.01 9.68 5.753-2.285 1.528-.054.033-7.31-4.308-.03 3.007 4.798 2.825-4.887 2.933L4.66 34.088l28.62-17.204v.003L62.266 33.78zm.023-3.027L33.287 13.655v-.004l-.004.004-.004-.003v.006L4.595 30.736V7.913l28.848-3.025L62.29 7.913v22.84z" stroke="none" transform="translate(40, 35)" fill="currentColor"></path>
+                  </g>
+                </symbol>
               </svg>
+
+
+
             </a>
           </div>
         </div>
