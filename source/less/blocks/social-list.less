@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 160px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -16,6 +17,7 @@
     align-items: center;
   }
 }
+
 
 .social-list__item {
   width: 48px;
@@ -32,4 +34,8 @@
 
 .social-list__item:active {
   background-color: rgba(84, 150, 189, 1);
+}
+
+.social-list__item-location {
+  margin-right: 1%;
 }
