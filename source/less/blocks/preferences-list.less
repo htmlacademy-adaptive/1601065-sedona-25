@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 52px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -19,23 +23,31 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
   color: @heading-text-color;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 16px;
+  padding-left: 10px;
+  text-transform: uppercase;
 
   @media (min-width: @mobile-width-only) {
-    text-align: left;
+    text-align: center;
   }
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    padding-left: 0;
   }
 }
 
@@ -48,6 +60,8 @@
   color: @paragraph-text-color;
   margin: 0;
   padding: 0;
+  padding-left: 50px;
+  text-transform: uppercase;
 
   @media (min-width: @mobile-width-only) {
     text-align: left;
@@ -55,10 +69,12 @@
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -69,4 +85,28 @@
 
 .preferences-list__item {
   background-image: url("../img/image/svg/icon-house.svg");
+}
+
+.preferences-list__div {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.preferences-list__svg {
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 75px;
+    height: 72px;
+  }
 }

@@ -48,3 +48,18 @@
   padding-bottom: 40px;
   text-transform: uppercase;
 }
+
+.benefits__wrapper--background {
+  background-image: url("../img/image/png/vector-left.png"),
+    url("../img/image/png/vector-right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
+}
