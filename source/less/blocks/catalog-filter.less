@@ -4,11 +4,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 60px 0;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 120px 0;
   }
 }
 
@@ -29,7 +31,7 @@
   }
 }
 
-.catalog-filter__list {
+.catalog-filter__list-one {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,11 +40,32 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 36px 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 53px 0;
+  }
+}
+
+.catalog-filter__list-two {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 84px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 44px 0;
   }
 }
 
@@ -115,8 +138,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-left: 20%;
-  margin-right: 3%;
+  text-transform: initial;
+  color: #000000;
+  padding-left: 62px;
 }
 
 .catalog-filter__control-input[type="radio"] + .catalog-filter__control-mark {
@@ -198,6 +222,16 @@
   margin: 0;
   text-transform: uppercase;
   text-align: right;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .catalog-filter__item-label {
@@ -212,6 +246,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    max-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -230,6 +265,10 @@
   margin-top: 97px;
   grid-column-start: 1;
   grid-column-end: 4;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 96px 0;
+  }
 }
 
 .catalog-filter__label-input {
@@ -238,4 +277,36 @@
 
 .catalog-filter__input-form {
   max-width: 768px;
+  padding-bottom: 113px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 123px;
+  }
+}
+
+
+.catalog-filter__container-one {
+  @media (min-width: @tablet-width) {
+    padding-right: 43px;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+.catalog-filter__container-two {
+  @media (min-width: @tablet-width) {
+    padding-left: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 64px;
+  }
 }
