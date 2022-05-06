@@ -1,16 +1,18 @@
 .main-container__element-image {
   box-sizing: border-box;
-  background-image: url("../img/image/jpg/back.jpg");
+  background-image: url("../img/image/png/decorative-left.png"),
+    url("../img/image/png/decorative-right.png"),
+    url("../img/image/jpg/back.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 50%;
+  background-position: 0 100%, 100% 100%, 50%;
   min-height: 389px;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-size: cover;
+  background-size: 160px 57px, 160px 57px, cover;
 
   @media (min-width: @tablet-width) {
     min-height: 518px;
@@ -45,12 +47,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 648px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
+    max-width: 1200px;
   }
 }
 
@@ -103,4 +107,73 @@
 
 .main-container__img-photo {
   max-width: 100%;
+  height: auto;
 }
+
+.main-container__element-image--the-size {
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459px;
+    height: 350px;
+  }
+}
+
+.main-container__element-image--location {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+    height: 79px;
+  }
+}
+
+.main-container__element-image-catalog {
+  height: 158px;
+  box-sizing: border-box;
+  background-image: url("../img/image/png/decorative-left.png"),
+    url("../img/image/png/decorative-right.png"),
+    url("../img/image/jpg/back-desktop.jpg.jpg");
+  color: @navigation-text-color;
+  background-repeat: no-repeat;
+  background-color: @navigation-background;
+  background-position: 0 100%, 100% 100%, 50%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-size: 160px 57px, 160px 57px, cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/image/jpg/back-tablet.jpg");
+      background-size: 1199px 519px;
+      min-height: 290px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/image/jpg/back-desktop-catalog.jpg");
+      background-size: 1199px 519px;
+      min-height: 301px;
+    }
+  }
+}
+
