@@ -117,37 +117,31 @@
 .main-container__element-image-catalog {
   height: 158px;
   box-sizing: border-box;
-  background-image: url("../img/image/png/decorative-left.png"),
-    url("../img/image/png/decorative-right.png"),
-    url("../img/image/jpg/back-desktop.jpg.jpg");
+  background-image: url("../img/image/svg/intro-triangle.svg"),
+    url("../img/image/jpg/back-desktop-mobile-catalog.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 0 100%, 100% 100%, 50%;
+  background-position: 0 100%, 50%;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-size: 160px 57px, 160px 57px, cover;
+  background-size: 100%, cover;
+  min-height: 158px;
 
   @media (min-width: @tablet-width) {
-    min-height: 290px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back-tablet.jpg");
-      background-size: 1199px 519px;
-      min-height: 290px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg"),
+      url("../img/image/jpg/back-desktop-tablet.jpg");
+    min-height: 462px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 301px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back-desktop-catalog.jpg");
-      background-size: 1199px 519px;
-      min-height: 301px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg"),
+      url("../img/image/jpg/back-desktop.jpg");
+    min-height: 462px;
+    background-position: 0 100%, 0 100%;
+    background-size: 100%, 100% 170%;
   }
 }
 

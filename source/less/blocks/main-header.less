@@ -1,23 +1,21 @@
 .main-header {
   background-color: @main-background;
   min-height: 56px;
+  position: relative;
 }
 
 .main-header__logo {
   height: 96px;
   width: 185px;
   position: absolute;
-  padding-left: 20%;
-  padding-right: 20%;
   z-index: 2;
+  left: 20%;
 
   @media (min-width: @tablet-width) {
-    padding-left: 38%;
-    padding-right: 38%;
+    left: 38%;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 507px;
-    padding-right: 508px;
+    left: 507px;
   }
 }
