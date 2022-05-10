@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="icon" href="img/image/svg/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/image/png/favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -54,9 +58,9 @@
     <ul class="main-container__item--registration list">
       <li class="list__item--location list__item-grid">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-1-desktop.jpg, img/image/jpg/photo-1-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/image/jpg/photo-1-tablet.jpg, img/image/jpg/photo-1-tablet@2x.jpg">
-          <img class="main-container__img-photo" src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg" alt="Неродные просторы">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/image/jpg/photo-1-desktop.jpg, img/image/jpg/photo-1-desktop@2x.jpg">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/image/jpg/photo-1-tablet.jpg, img/image/jpg/photo-1-tablet@2x.jpg">
+          <img class="main-container__img-photo" type="image/webp" src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg" alt="Неродные просторы">
         </picture>
         <div class="list__div">
           <div class="list__div-location-text">
@@ -64,27 +68,27 @@
             <p class="list__subtitle">Автор фото: Борис</p>
           </div>
           <div class="list__div-location-img">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+            <svg class="list__svg" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
             </svg>
             <span class="list__text">1350</span>
           </div>
         </div>
       </li>
-      <li class="list__item--location list__item--location-img">
+      <li class="list__item--location">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-2-desktop.jpg, img/image/jpg/photo-2-desktop@2x.jpg">
           <source media="(min-width: 768px)" srcset="img/image/jpg/photo-2-tablet.jpg, img/image/jpg/photo-2-tablet@2x.jpg">
           <img class="main-container__img-photo" src="img/image/jpg/photo-2-mobile.jpg.jpg"  srcset="img/image/jpg/photo-2-mobile.jpg@2x.jpg" alt="Местная растительность">
         </picture>
-        <div class="list__div">
+        <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Местная растительность</h2>
             <p class="list__subtitle">Автор фото: Сергей</p>
           </div>
           <div class="list__div-location-img">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+            <svg width="23" height="21" class="list__svg" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
             </svg>
             <span class="list__text">143</span>
           </div>
@@ -96,14 +100,14 @@
           <source media="(min-width: 768px)" srcset="img/image/jpg/photo-3-tablet.jpg, img/image/jpg/photo-3-tablet@2x.jpg">
           <img class="main-container__img-photo" src="img/image/jpg/photo-3-mobile.jpg"  srcset="img/image/jpg/photo-3-mobile@2x.jpg" alt="Дорога на север">
         </picture>
-        <div class="list__div">
+        <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Дорога на север</h2>
             <p class="list__subtitle">Автор фото: Петр</p>
           </div>
           <div class="list__div-location-img">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+            <svg class="list__svg" width="23" height="21" viewBox="0 0 23 21"  xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
             </svg>
             <span class="list__text">96</span>
           </div>
@@ -115,21 +119,21 @@
           <source media="(min-width: 768px)" srcset="img/image/jpg/photo-4-tablet.jpg, img/image/jpg/photo-4-tablet@2x.jpg">
           <img class="main-container__img-photo" src="img/image/jpg/photo-4-mobile.jpg"  srcset="img/image/jpg/photo-4-mobile@2x.jpg" alt="Мост дьявола">
         </picture>
-        <div class="list__div">
+        <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Мост дьявола</h2>
             <p class="list__subtitle">Автор фото: Антон</p>
           </div>
           <div class="list__div-location-img">
-            <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" fill="#000"/>
+            <svg class="list__svg" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
             </svg>
             <span class="list__text">254</span>
           </div>
         </div>
       </li>
     </ul>
-    <section class="main-container__text--preview section">
+    <section class="section">
       <h2 class="section__text-subtitle">Вы еще сомневаетесь?</h2>
       <p class="section-text-subtitle--location">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <picture>
@@ -141,9 +145,6 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts">
-        <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2007235.5937178007!2d-113.65259714230781!3d34.2833539188895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1650387988030!5m2!1sru!2sru"  allowfullscreen title="Карта Аризоны"></iframe>
-      </div>
       <div class="main-footer__social">
         <p class="main-footer__hashtag">#visitsedona</p>
         <b class="visually-hidden">Давайте дружить!</b>
@@ -174,11 +175,11 @@
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано:
             <span class="visually-hidden">HTML Academy</span>
-            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+            <svg class="copyright__svg--color" width="27" height="35" aria-label="Логотип HTML Академии" focusable="folse">
+              <use href="/img/sprite.svg#logo-html"></use>
             </svg>
           </a>
         </div>
