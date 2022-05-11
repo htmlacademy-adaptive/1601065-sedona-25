@@ -9,6 +9,11 @@
   padding: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .section__description {
@@ -20,8 +25,16 @@
   color: @heading-text-color;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .section__text-subtitle {
@@ -97,4 +110,12 @@
 
 .section {
   padding: 39px 18px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 18px 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 150px 49px;
+  }
 }

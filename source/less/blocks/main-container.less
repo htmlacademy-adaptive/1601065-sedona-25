@@ -1,37 +1,28 @@
 .main-container__element-image {
   box-sizing: border-box;
-  background-image: url("../img/image/png/decorative-left.png"),
-    url("../img/image/png/decorative-right.png"),
+  background-image: url("../img/image/svg/intro-triangle.svg-mobile.svg"),
     url("../img/image/jpg/back.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 0 100%, 100% 100%, 50%;
+  background-position: 0 100%, 50%;
   min-height: 389px;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-size: 160px 57px, 160px 57px, cover;
+  background-size: 100%, cover;
 
   @media (min-width: @tablet-width) {
     min-height: 518px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back.jpg");
-      background-size: 1199px 519px;
-      min-height: 518px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg-tablet.svg"),
+      url("../img/image/jpg/back-desktop.jpg-tablet.jpg");
   }
 
   @media (min-width: @desktop-width) {
     min-height: 518px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back.jpg");
-      background-size: 1199px 519px;
-      min-height: 518px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg"),
+      url("../img/image/jpg/back-desktop.jpg");
   }
 }
 
@@ -76,6 +67,7 @@
 
 .main-container__img {
   width: 100%;
+  position: relative;
 }
 
 .main-container__img-photo {
@@ -117,7 +109,7 @@
 .main-container__element-image-catalog {
   height: 158px;
   box-sizing: border-box;
-  background-image: url("../img/image/svg/intro-triangle.svg"),
+  background-image: url("../img/image/svg/intro-triangle.svg-mobile.svg"),
     url("../img/image/jpg/back-desktop-mobile-catalog.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
@@ -131,7 +123,7 @@
   min-height: 158px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/image/svg/intro-triangle.svg"),
+    background-image: url("../img/image/svg/intro-triangle.svg-tablet.svg"),
       url("../img/image/jpg/back-desktop-tablet.jpg");
     min-height: 462px;
   }
@@ -143,5 +135,11 @@
     background-position: 0 100%, 0 100%;
     background-size: 100%, 100% 170%;
   }
+}
+
+.main-container__img-svg {
+  position: absolute;
+  right: 300px;
+  top: 3650px;
 }
 
