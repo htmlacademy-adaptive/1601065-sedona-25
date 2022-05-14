@@ -40,6 +40,7 @@
     grid-template-columns: 1fr 1fr;
     max-width: 648px;
     padding: 0 51px 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -147,20 +148,22 @@
 .main-container__img-svg {
   position: absolute;
   right: 300px;
-  top: 3650px;
+  top: 270px;
 
   @media (min-width: @tablet-width) {
     right: 280px;
-    top: 2420px;
+    top: 270px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 560px;
-    top: 1785px;
+    right: 370px;
+    top: 230px;
   }
 }
 
 .main-container__img-photo-one {
-  min-width: 400px;
-  min-height: 267px;
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+    min-height: 267px;
+  }
 }
