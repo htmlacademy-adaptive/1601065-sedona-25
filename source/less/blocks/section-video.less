@@ -25,11 +25,15 @@
   color: @heading-text-color;
   text-transform: uppercase;
   padding: 0 20px 0;
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 260px;
+
 
   @media (min-width: @tablet-width) {
     padding: 0 100px 0;
     margin-bottom: 90px;
+    width: 450px;
   }
 
   @media (min-width: @desktop-width) {
@@ -51,4 +55,12 @@
 
 .section-video__div {
   position: relative;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 177px;
+
+  @media (min-width: @tablet-width) {
+    height: 500px;
+  }
 }

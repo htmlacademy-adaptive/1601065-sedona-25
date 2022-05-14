@@ -19,13 +19,16 @@
   text-align: center;
   color: @navigation-text-color;
   padding: 0;
-  margin: 0;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 11px;
+  width: 250px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin: 0 auto;
     margin-bottom: 15px;
+    width: 150px;
   }
 }
 
@@ -53,11 +56,19 @@
   text-align: center;
   color: @navigation-text-color;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   text-transform: uppercase;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
+    width: 210px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -69,7 +80,6 @@
 
   @media (min-width: @tablet-width) {
     background-image: none;
-    max-width: 246px;
     box-sizing: border-box;
   }
 
