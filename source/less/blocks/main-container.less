@@ -39,6 +39,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 648px;
+    padding: 0 51px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,6 +68,13 @@
 .main-container__img {
   width: 100%;
   position: relative;
+}
+
+.main-container__img-video {
+  width: 100%;
+  position: relative;
+  min-height: 500px;
+  min-width: 800px;
 }
 
 .main-container__img-photo {
@@ -124,15 +132,15 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/image/svg/intro-triangle.svg-tablet.svg"),
       url("../img/image/jpg/back-desktop-tablet.jpg");
-    min-height: 462px;
+    min-height: 290px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/image/svg/intro-triangle.svg"),
       url("../img/image/jpg/back-desktop.jpg");
-    min-height: 462px;
     background-position: 0 100%, 0 100%;
     background-size: 100%, 100% 170%;
+    min-height: 300px;
   }
 }
 
@@ -140,4 +148,19 @@
   position: absolute;
   right: 300px;
   top: 3650px;
+
+  @media (min-width: @tablet-width) {
+    right: 280px;
+    top: 2420px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 560px;
+    top: 1785px;
+  }
+}
+
+.main-container__img-photo-one {
+  min-width: 400px;
+  min-height: 267px;
 }

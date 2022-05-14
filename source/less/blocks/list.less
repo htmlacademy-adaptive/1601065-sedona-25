@@ -18,8 +18,12 @@
   color: @heading-text-color;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -33,6 +37,11 @@
   line-height: 21px;
   text-align: center;
   color: @heading-text-color;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+  }
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -40,6 +49,8 @@
 }
 
 .list__item--location:nth-child(4) {
+  margin-bottom: 0;
+
   @media (min-width: @desktop-width) {
     grid-column-start: 3;
   }
@@ -78,12 +89,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
 
 .list__div {
   display: block;
-  padding-left: 3%;
-  padding-right: 3%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -94,7 +104,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 1128px;
+    width: 100%;
     height: 80px;
     top: 320px;
     color: #ffffff;
@@ -103,7 +113,16 @@
 }
 
 .list__div-location-img {
-  margin-top: 17px;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 15px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 20px 10px;
+  }
 }
 
 .list__item--color {
@@ -127,9 +146,19 @@
 .list__div-location {
   @media (min-width: @desktop-width) {
     position: absolute;
-    width: 377px;
+    width: 100%;
     height: 80px;
-    top: 190px;
+    top: 188px;
     color: #ffffff;
+  }
+}
+
+.list__div-location-text {
+  @media (min-width: @tablet-width) {
+    padding: 20px 25px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 20px 20px;
   }
 }
