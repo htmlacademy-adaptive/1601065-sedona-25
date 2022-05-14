@@ -7,9 +7,13 @@
   color: @heading-text-color;
   margin: 0;
   padding: 0;
-  padding-top: 39px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .section__description {
@@ -21,8 +25,16 @@
   color: @heading-text-color;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  margin-bottom: 35px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .section__text-subtitle {
@@ -35,11 +47,30 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  margin-top: 62px;
-  margin-bottom: 40px;
 }
 
-.section-text-subtitle--location {
+.section-container__text-subtitle {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: @heading-text-color;
+  padding: 0;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin: 0 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 30px;
+  }
+}
+
+.section-container__text-subtitle--location {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -49,8 +80,16 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  margin-bottom: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 140px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 360px 0;
+  }
 }
+
 
 .section__text--subtitle {
   margin: 20px;
@@ -61,7 +100,6 @@
   width: 284px;
   height: 58px;
   padding: 0;
-  margin-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     width: 458px;
@@ -96,4 +134,28 @@
   color: #333333;
   margin: 0;
   text-align: center;
+}
+
+.section {
+  padding: 39px 18px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 18px 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 150px 49px;
+  }
+}
+
+.section-container {
+  padding: 35px 18px 65px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 18px 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 18px 95px;
+  }
 }

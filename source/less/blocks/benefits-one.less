@@ -1,0 +1,15 @@
+.benefits-one {
+  background-color: @navigation-background;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 800px 400px;
+    }
+  }
+}

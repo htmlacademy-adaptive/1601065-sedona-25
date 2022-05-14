@@ -1,6 +1,4 @@
 .catalog-filter__location {
-  padding: 0 20px 0;
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,11 +21,13 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    border-top: 1px solid #dbdbdb;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    border-top: 1px solid #dbdbdb;
   }
 }
 
@@ -46,7 +46,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 53px 0;
+    padding: 0;
   }
 }
 
@@ -65,7 +65,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 44px 0;
+    padding: 0;
   }
 }
 
@@ -78,6 +78,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 20px;
 }
 
 .catalog-filter__title {
@@ -91,10 +92,24 @@
 .catalog-filter__input {
   border: none;
   background-color: #f2f2f2;
-  padding: 22px;
+  padding: 16px;
   box-sizing: border-box;
   width: 100%;
   max-width: 430px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-filter__input:hover {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.catalog-filter__input:active {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px #e5e5e5;
+  outline: none;
 }
 
 .catalog-filter__registration-telephone {
@@ -121,6 +136,7 @@
 
 .catalog-filter__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -132,6 +148,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .catalog-filter__control-label {
@@ -170,8 +187,12 @@
 }
 
 
+.catalog-filter__control-mark:active {
+  background-color: rgba(213, 213, 213, 1);
+}
+
 .catalog-filter__control-input:active + .catalog-filter__control-mark {
-  background: rgba(213, 213, 213, 0.3);
+  background-color: rgba(213, 213, 213, 0.3);
 }
 
 .catalog-filter__item {
@@ -290,23 +311,52 @@
 
 
 .catalog-filter__container-one {
+  border-top: 1px solid #e5e5e5;
+
   @media (min-width: @tablet-width) {
     padding-right: 43px;
     border-right: 1px solid #dbdbdb;
+    border-top: none;
   }
 
   @media (min-width: @desktop-width) {
     padding-right: 63px;
     border-right: 1px solid #dbdbdb;
+    border-top: none;
   }
 }
 
 .catalog-filter__container-two {
+  border-top: 1px solid #e5e5e5;
+
   @media (min-width: @tablet-width) {
     padding-left: 44px;
+    border-top: none;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 64px;
+    border-top: none;
   }
+}
+
+.catalog-filter__padding {
+  padding: 0 20px 0;
+}
+
+.catalog-filter__border {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: none;
+  }
+}
+
+.catalog-filter__span {
+  padding: 0 12px 0;
 }

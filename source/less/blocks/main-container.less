@@ -1,37 +1,28 @@
 .main-container__element-image {
   box-sizing: border-box;
-  background-image: url("../img/image/png/decorative-left.png"),
-    url("../img/image/png/decorative-right.png"),
+  background-image: url("../img/image/svg/intro-triangle.svg-mobile.svg"),
     url("../img/image/jpg/back.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 0 100%, 100% 100%, 50%;
+  background-position: 0 100%, 50%;
   min-height: 389px;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-size: 160px 57px, 160px 57px, cover;
+  background-size: 100%, cover;
 
   @media (min-width: @tablet-width) {
     min-height: 518px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back.jpg");
-      background-size: 1199px 519px;
-      min-height: 518px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg-tablet.svg"),
+      url("../img/image/jpg/back-desktop.jpg-tablet.jpg");
   }
 
   @media (min-width: @desktop-width) {
     min-height: 518px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back.jpg");
-      background-size: 1199px 519px;
-      min-height: 518px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg"),
+      url("../img/image/jpg/back-desktop.jpg");
   }
 }
 
@@ -48,6 +39,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 648px;
+    padding: 0 51px 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,8 +52,7 @@
 }
 
 .main-container__section {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 35px 18px 49px;
 
   @media (min-width: @tablet-width) {
     padding-left: 145px;
@@ -73,41 +65,23 @@
   }
 }
 
-.main-container__text--preview {
-  margin-left: 8%;
-  margin-right: 8%;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 17%;
-    margin-right: 17%;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-}
 
 .main-container__img {
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-bottom: 28px;
   width: 100%;
+  position: relative;
+}
 
-  @media (min-width: @tablet-width) {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 16%;
-    margin-right: 16%;
-  }
+.main-container__img-video {
+  width: 100%;
+  position: relative;
+  min-height: 500px;
+  min-width: 800px;
 }
 
 .main-container__img-photo {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .main-container__element-image--the-size {
@@ -143,37 +117,53 @@
 .main-container__element-image-catalog {
   height: 158px;
   box-sizing: border-box;
-  background-image: url("../img/image/png/decorative-left.png"),
-    url("../img/image/png/decorative-right.png"),
-    url("../img/image/jpg/back-desktop.jpg.jpg");
+  background-image: url("../img/image/svg/intro-triangle.svg-mobile.svg"),
+    url("../img/image/jpg/back-desktop-mobile-catalog.jpg");
   color: @navigation-text-color;
   background-repeat: no-repeat;
   background-color: @navigation-background;
-  background-position: 0 100%, 100% 100%, 50%;
+  background-position: 0 100%, 50%;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  background-size: 160px 57px, 160px 57px, cover;
+  background-size: 100%, cover;
+  min-height: 158px;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/image/svg/intro-triangle.svg-tablet.svg"),
+      url("../img/image/jpg/back-desktop-tablet.jpg");
     min-height: 290px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back-tablet.jpg");
-      background-size: 1199px 519px;
-      min-height: 290px;
-    }
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 301px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/image/jpg/back-desktop-catalog.jpg");
-      background-size: 1199px 519px;
-      min-height: 301px;
-    }
+    background-image: url("../img/image/svg/intro-triangle.svg"),
+      url("../img/image/jpg/back-desktop.jpg");
+    background-position: 0 100%, 0 100%;
+    background-size: 100%, 100% 170%;
+    min-height: 300px;
   }
 }
 
+.main-container__img-svg {
+  position: absolute;
+  right: 300px;
+  top: 270px;
+
+  @media (min-width: @tablet-width) {
+    right: 280px;
+    top: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 370px;
+    top: 230px;
+  }
+}
+
+.main-container__img-photo-one {
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+    min-height: 267px;
+  }
+}
