@@ -69,7 +69,7 @@
             <input class="catalog-filter__input" type="text" name="name" placeholder="Пустота">
           </label>
           <label class="catalog-filter__control">
-            <span>Отчество:</span>
+            <span class="catalog-filter__span">Отчество:</span>
             <input class="catalog-filter__input" type="text" name="name" placeholder="Викторович">
           </label>
         </div>
@@ -101,67 +101,71 @@
           </label>
         </div>
       </div>
-      <fieldset class="catalog-filter__group-location">
-        <legend class="catalog-filter__text-subtitle">Вaше oбщее впечатление:</legend>
-          <ul class="catalog-filter__list-one">
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression" value="impression type"
-                    checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
-      <fieldset class="catalog-filter__group-location">
-        <legend class="catalog-filter__text-subtitle">Посещенные достопримечательности:</legend>
-          <ul class="catalog-filter__list-two">
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Мост дьявола"  checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Слайд-парк" checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Красные скалы">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
+      <div class="catalog-filter__div--border">
+        <fieldset class="catalog-filter__group-location">
+          <legend class="catalog-filter__text-subtitle">Вaше oбщее впечатление:</legend>
+            <ul class="catalog-filter__list-one">
+              <li class="catalog-filter__item catalog-filter__item-label">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression" value="impression type"
+                      checked>
+                  <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item catalog-filter__item-label">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
+                  <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label catalog-filter__control-label-one">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item catalog-filter__item-label">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
+                  <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label catalog-filter__control-label-two">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
+      </div>
+      <div class="catalog-filter__div--border-one">
+        <fieldset class="catalog-filter__group-location">
+          <legend class="catalog-filter__text-subtitle">Посещенные достопримечательности:</legend>
+            <ul class="catalog-filter__list-two">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Мост дьявола"  checked>
+                  <span class="catalog-filter__control-mark"></span>
+                  <span class="catalog-filter__control-label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
+                  <span class="catalog-filter__control-mark catalog-filter__control-mark-one"></span>
+                  <span class="catalog-filter__control-label catalog-filter__control-label-three">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Слайд-парк" checked>
+                  <span class="catalog-filter__control-mark catalog-filter__control-mark-one"></span>
+                  <span class="catalog-filter__control-label catalog-filter__control-label-for">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__control">
+                  <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Красные скалы">
+                  <span class="catalog-filter__control-mark catalog-filter__control-mark-one"></span>
+                  <span class="catalog-filter__control-label catalog-filter__control-label-five">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <div class="catalog-filter__div">
           <fieldset class="catalog-filter__group-location">
             <legend class="catalog-filter__text-subtitle catalog-filter__label-input">Опишите свои эмоции:</legend>
@@ -177,10 +181,10 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__social">
-        <p class="main-footer__hashtag">#visitsedona</p>
+      <div class="main-footer__social main-footer__social-form">
+        <p class="main-footer__hashtag main-footer__hashtag-form">#visitsedona</p>
         <b class="visually-hidden">Давайте дружить!</b>
-        <ul class="social-list">
+        <ul class="main-footer__social-list-form social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden"> Мы в Вконтакте</span>
@@ -190,7 +194,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy" ">
+            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m22.44 4.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192L7.022 13.314 2.26 11.823c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z" fill="#fff"/>
