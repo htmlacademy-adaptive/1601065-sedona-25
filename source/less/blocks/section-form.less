@@ -1,5 +1,13 @@
 .section-form {
   padding: 36px 7px 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 7px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 7px 28px;
+  }
 }
 
 .section-form__text-subtitle {
@@ -13,6 +21,15 @@
   padding: 0;
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+  }
 }
 
 .section-form__subtitle {
@@ -33,5 +50,6 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     width: 440px;
+    padding-left: 17px;
   }
 }

@@ -2,7 +2,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 60px 0;
+    padding: 0 53px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,12 +22,24 @@
     grid-column-start: 1;
     grid-column-end: 3;
     border-top: 1px solid #dbdbdb;
+    margin-top: 35px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
     border-top: 1px solid #dbdbdb;
+  }
+}
+
+.catalog-filter__group-location-padding {
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    padding-left: 40px;
   }
 }
 
@@ -46,6 +58,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    padding-top: 25px;
+    padding-left: 50px;
+    min-width: 1000px;
   }
 }
 
@@ -64,6 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    padding-top: 30px;
   }
 }
 
@@ -76,6 +92,22 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 0 25px;
+    width: 320px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.catalog-filter__text-subtitle-padding {
+  @media (min-width: @desktop-width) {
+    padding-left: 65px;
+  }
 }
 
 .catalog-filter__title {
@@ -97,6 +129,10 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    min-width: 430px;
+  }
 }
 
 .catalog-filter__input:hover {
@@ -229,6 +265,14 @@
 .catalog-filter__button--to-apply {
   box-sizing: border-box;
   padding: 18px 45px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 70px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 100px 18px;
+  }
 }
 
 .catalog-filter__subtitle-button {
@@ -266,6 +310,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 768px;
+    padding: 45px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -303,6 +348,7 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 123px;
+    min-width: 768px;
   }
 }
 
@@ -311,9 +357,9 @@
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
-    padding-right: 43px;
     border-right: 1px solid #dbdbdb;
     border-top: none;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -328,18 +374,26 @@
   padding: 5px 0 0;
 
   @media (min-width: @tablet-width) {
-    padding-left: 44px;
     border-top: none;
+    padding-left: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 64px;
+    padding-left: 0;
     border-top: none;
   }
 }
 
 .catalog-filter__padding {
   padding: 23px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 70px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 0 20px;
+  }
 }
 
 .catalog-filter__border {
@@ -357,6 +411,10 @@
 
 .catalog-filter__span {
   padding: 0 12px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 15px 0;
+  }
 }
 
 .catalog-filter__div--border {
@@ -384,24 +442,101 @@
 
 .catalog-filter__control-label-one {
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-left: 70px;
+    padding-top: 10px;
+  }
 }
 
 .catalog-filter__control-label-two {
   padding-top: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .catalog-filter__control-label-three {
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 75px;
+  }
 }
 
 .catalog-filter__control-label-for {
   padding-top: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: 75px;
+    padding-top: 15px;
+  }
 }
 
 .catalog-filter__control-label-five {
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-left: 65px;
+  }
 }
 
 .catalog-filter__control-mark-one {
   margin: 10px 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 5px 10px 0;
+  }
+}
+
+.catalog-filter__control-mark-new {
+  @media (min-width: @tablet-width) {
+    margin: 10px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 15px;
+  }
+}
+
+.catalog-filter__control-one {
+  padding-right: 40px;
+}
+
+.catalog-filter__control-two {
+  padding-left: 35px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 25px;
+  }
+}
+
+.catalog-filter__input-form-text {
+  min-width: 403px;
+}
+
+.catalog-filter__text-subtitle-form {
+  padding-right: 90px;
+}
+
+.catalog-filter__group-location-text {
+  @media (min-width: @desktop-width) {
+    margin: 80px 0  40px;
+  }
+}
+
+.catalog-filter__label-input-text {
+  padding-right: 0;
 }
