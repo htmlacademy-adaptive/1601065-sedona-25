@@ -7,6 +7,9 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import gulp from 'gulp';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
 
 
 
@@ -28,7 +31,7 @@ export const styles = () => {
 // HTML
 export const html = () => {
   return gulp.src ('source/*.html')
-  .pipe (htmlmin({collapseWhitespace: true }))
+  .pipe (htmlmin({ collapseWhitespace: true }))
   .pipe (gulp.dest('source'))
 }
 
@@ -57,3 +60,25 @@ const watcher = () => {
 export default gulp.series(
   styles, server, watcher
 );
+
+// Postcss Autoprefixer
+
+export const css = () => {
+  return gulp.src('./src/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+};
+
+gulp.task('autoprefixer', () => {
+  const autoprefixer = require('autoprefixer')
+  const sourcemaps = require('gulp-sourcemaps')
+  const postcss = require('gulp-postcss')
+
+  return gulp.src('./src/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./dest'))
+})
