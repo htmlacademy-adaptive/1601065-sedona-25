@@ -7,9 +7,7 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import gulp from 'gulp';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
+
 
 
 
