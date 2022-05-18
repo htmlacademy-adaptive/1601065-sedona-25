@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 36px 0;
+    padding-left: 150px;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,7 +58,7 @@
     flex-wrap: wrap;
     padding: 0;
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 150px;
     min-width: 1000px;
   }
 }
@@ -72,6 +73,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 84px 0;
     padding-right: 220px;
+    padding-left: 245px;
   }
 
   @media (min-width: @desktop-width) {
@@ -269,13 +271,16 @@
 .catalog-filter__button--to-apply {
   box-sizing: border-box;
   padding: 18px 45px 18px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding: 18px 70px 18px;
+    width: 324px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 18px 100px 18px;
+    width: 384px;
   }
 }
 
@@ -323,7 +328,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    max-width: 768px;
+    max-width: 100%;
     padding: 45px 0 0;
   }
 
@@ -342,10 +347,6 @@
 .catalog-filter__div {
   grid-column-start: 1;
   grid-column-end: 4;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 150px;
-  }
 
   @media (min-width: @desktop-width) {
     padding: 0 96px 0;
@@ -463,6 +464,8 @@
     grid-column-start: 1;
     grid-column-end: 3;
     border: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -475,6 +478,8 @@
     grid-column-start: 1;
     grid-column-end: 3;
     border: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -577,12 +582,8 @@
 }
 
 .catalog-filter__text-subtitle-form {
-  @media (min-width: @tablet-width) {
-    padding-right: 120px;
-  }
-
   @media (min-width: @desktop-width) {
-    padding-right: 165px;
+    padding-right: 75px;
     padding-top: 5px;
   }
 }
@@ -592,7 +593,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-right: 150px;
   }
 
   @media (min-width: @desktop-width) {
@@ -602,10 +602,6 @@
 
 
 .catalog-filter__text-subtitle-padding-one {
-  @media (min-width: @tablet-width) {
-    padding-right: 165px;
-  }
-
   @media (min-width: @desktop-width) {
     padding-right: 120px;
   }
@@ -651,6 +647,11 @@
     top: 1045px;
     right: 10%;
   }
+}
+
+.catalog-filter__text-subtitle--before-one {
+  width: 290px;
+  margin: 0 auto;
 }
 
 .catalog-filter__text-subtitle--before-one::before {
