@@ -9,6 +9,11 @@
   <link rel="icon" href="img/image/svg/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/image/png/favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/image/png/logo.png" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -61,7 +66,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/image/jpg/photo-1-desktop.jpg 1x, img/image/jpg/photo-1-desktop@2x.jpg 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/image/jpg/photo-1-tablet.jpg 1x, img/image/jpg/photo-1-tablet@2x.jpg 2x">
-            <img class="main-container__img-photo"  src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+            <img class="main-container__img-photo" loading="lazy" src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
           </picture>
         </a>
         <div class="list__div">
@@ -82,7 +87,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-2-desktop.jpg 1x, img/image/jpg/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/image/jpg/photo-2-tablet.jpg 1x, img/image/jpg/photo-2-tablet@2x.jpg 2x">
-            <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-2-mobile.jpg.jpg"  srcset="img/image/jpg/photo-2-mobile.jpg@2x.jpg 2x" alt="Местная растительность">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-2-mobile.jpg.jpg"  srcset="img/image/jpg/photo-2-mobile.jpg@2x.jpg 2x" alt="Местная растительность">
           </picture>
         </a>
         <div class="list__div list__div-location">
@@ -103,7 +108,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-3-desktop.jpg 1x, img/image/jpg/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/image/jpg/photo-3-tablet.jpg 1x, img/image/jpg/photo-3-tablet@2x.jpg 2x">
-            <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-3-mobile.jpg"  srcset="img/image/jpg/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-3-mobile.jpg"  srcset="img/image/jpg/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
           </picture>
         </a>
         <div class="list__div list__div-location">
@@ -124,7 +129,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-4-desktop.jpg 1x, img/image/jpg/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/image/jpg/photo-4-tablet.jpg 1x, img/image/jpg/photo-4-tablet@2x.jpg 2x">
-            <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-4-mobile.jpg"  srcset="img/image/jpg/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-4-mobile.jpg"  srcset="img/image/jpg/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
           </picture>
         </a>
         <div class="list__div list__div-location">
@@ -148,7 +153,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/image/jpg/video-desktop.jpg 1x, img/image/jpg/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/image/jpg/video-tablet.jpg 1x, img/image/jpg/video-tablet@2x.jpg 2x">
-          <img class="main-container__img-video" src="img/image/jpg/video-mobile.jpg.jpg"  srcset="img/image/jpg/video-mobile.jpg@2x.jpg 2x" alt="Видео">
+          <img class="main-container__img-video" loading="lazy" src="img/image/jpg/video-mobile.jpg.jpg"  srcset="img/image/jpg/video-mobile.jpg@2x.jpg 2x" alt="Видео">
         </picture>
         <svg class="main-container__img-svg" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7"/>

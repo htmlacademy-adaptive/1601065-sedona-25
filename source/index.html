@@ -9,6 +9,11 @@
     <link rel="icon" href="img/image/svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/image/png/favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+    <link rel="preload" href="img/image/png/logo.png" as="image">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -72,7 +77,7 @@
                   <source type="image/webp" srcset="img/image/webp/photo-city1x1.webp 1x, img/image/webp/photo-city@1x1@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-city.jpg 1x, img/image/jpg/photo-city@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/image/jpg/photo-city@1x.jpg 1x, img/image/jpg/photo-city@1x@2x.jpg 2x">
-                  <img class="benefits__img" src="img/image/jpg/photo-city1x1.jpg"  srcset="img/image/jpg/photo-city@1x1@2x.jpg 2x" alt="городок Sedona.">
+                  <img class="benefits__img" loading="lazy" src="img/image/jpg/photo-city1x1.jpg"  srcset="img/image/jpg/photo-city@1x1@2x.jpg 2x" alt="городок Sedona.">
                 </picture>
               </div>
               <ul class="preferences-list">
@@ -127,7 +132,7 @@
                   <source type="image/webp" srcset="img/image/webp/photo-bridge1x1.webp 1x, img/image/webp/photo-bridge@1x1@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-bridge-desktop.jpg 1x, img/image/jpg/photo-bridg-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/image/jpg/photo-bridge-tablet.jpg 1x, img/image/jpg/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="benefits__img benefits__img-grid" src="img/image/jpg/photo-bridge1x1.jpg"  srcset="img/image/jpg/photo-bridge@1x1@2x.jpg 2x" alt="Мост дьявола.">
+                  <img class="benefits__img benefits__img-grid" loading="lazy" src="img/image/jpg/photo-bridge1x1.jpg"  srcset="img/image/jpg/photo-bridge@1x1@2x.jpg 2x" alt="Мост дьявола.">
                 </picture>
               </div>
             </li>
