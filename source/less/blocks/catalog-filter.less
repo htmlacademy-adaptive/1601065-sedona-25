@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 120px 0;
+    padding-left: 110px;
   }
 }
 
@@ -102,15 +103,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 75px;
-  }
-}
-
-.catalog-filter__text-subtitle-padding {
-  @media (min-width: @desktop-width) {
     padding-left: 85px;
   }
 }
+
 
 .catalog-filter__title {
   color: #333333;
@@ -234,6 +230,7 @@
 .catalog-filter__control-input:active + .catalog-filter__control-mark {
   background-color: rgba(213, 213, 213, 0.3);
 }
+
 
 .catalog-filter__item {
   @media (min-width: @desktop-width) {
@@ -359,7 +356,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 70px;
+    padding-right: 90px;
   }
 }
 
@@ -400,7 +397,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 23px;
+    padding-right: 15px;
     border-right: 1px solid #dbdbdb;
     border-top: none;
   }
@@ -451,6 +448,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 15px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
   }
 }
 
@@ -559,7 +560,7 @@
 
 .catalog-filter__control-one {
   @media (min-width: @tablet-width) {
-    padding-right: 40px;
+    padding-right: 50px;
   }
 }
 
@@ -581,8 +582,7 @@
 
 .catalog-filter__text-subtitle-form {
   @media (min-width: @desktop-width) {
-    padding-right: 75px;
-    padding-top: 5px;
+    padding-right: 85px;
   }
 }
 
@@ -601,7 +601,7 @@
 
 .catalog-filter__text-subtitle-padding-one {
   @media (min-width: @desktop-width) {
-    padding-right: 120px;
+    padding-right: 130px;
   }
 }
 
@@ -731,5 +731,27 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+  }
+}
+
+.catalog-filter__text-subtitle-text {
+  border: none;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 0 25px;
+    width: 320px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
   }
 }
