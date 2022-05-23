@@ -138,23 +138,23 @@ export const build = gulp.series (
   ),
 );
 
-//Defoult
-export const defoult=gulp.series (
-  clean,
-  copy,
-  copyimages,
-  gulp.parallel (
-    styles,
-    html,
-    scripts,
-    svg,
-    sprite,
-    createWebp
-  ),
-gulp.series (
-  server,
-  watcher
-));
+ //Default
+ export const default=gulp.series(
+   clean,
+   copy,
+   copyimages,
+   gulp.parallel(
+     styles,
+     html,
+     scripts,
+     svg,
+     sprite,
+     createWebp
+   ),
+ gulp.series(
+   server,
+   watcher
+ ));
 
 
 export default gulp.series(
