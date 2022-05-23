@@ -134,12 +134,14 @@ export const build = gulp.series (
     scripts,
     svg,
     sprite,
-    createWebp
-  ),
-);
+    createWebp),
+    gulp.series(
+      server,
+      watcher
+    ));
 
  //Default
- export const default=gulp.series(
+ export default gulp.series(
    clean,
    copy,
    copyimages,
@@ -155,8 +157,3 @@ export const build = gulp.series (
    server,
    watcher
  ));
-
-
-export default gulp.series(
-  clean, copy, sprite, svg, createWebp, copyimages, optimizeimages, scripts, html, styles, server, watcher
-);
