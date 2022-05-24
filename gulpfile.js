@@ -140,20 +140,20 @@ export const build = gulp.series (
       watcher
     ));
 
- //Default
- export default gulp.series(
-   clean,
-   copy,
-   copyimages,
-   gulp.parallel(
-     styles,
-     html,
-     scripts,
-     svg,
-     sprite,
-     createWebp
-   ),
- gulp.series(
-   server,
-   watcher
- ));
+  //Default
+  export default gulp.series(
+    clean,
+    copy,
+    copyimages,
+    gulp.parallel(
+      styles,
+      html,
+      scripts,
+      svg,
+      sprite,
+      createWebp
+    ),
+  gulp.series(
+    server,
+    watcher
+  ));
