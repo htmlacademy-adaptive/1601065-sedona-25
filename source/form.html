@@ -9,10 +9,15 @@
   <link rel="icon" href="img/image/svg/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/image/png/favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/image/png/logo.png" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img src="img/image/png/logo.png" width="185" height="96" alt="Седона">
     </a>
       <nav class="main-nav--closed  main-nav--nojs main-nav">
@@ -56,131 +61,137 @@
       <p class="section-form__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <section class="catalog-filter">
-    <form class="catalog-filter__location" action="https://echo.htmlacademy.ru/" method="get">
-      <div class="catalog-filter__container-one">
-        <div class="catalog-filter__padding">
-          <h2 class="catalog-filter__text-subtitle">Представьтесь:</h2>
-          <label class="catalog-filter__control">
-            <span class="catalog-filter__span">Имя*:</span>
-            <input class="catalog-filter__input" type="text" name="name" placeholder="Пётр">
-          </label>
-          <label class="catalog-filter__control">
-            <span class="catalog-filter__span">Фамилия*:</span>
-            <input class="catalog-filter__input" type="text" name="name" placeholder="Пустота">
-          </label>
-          <label class="catalog-filter__control">
-            <span>Отчество:</span>
-            <input class="catalog-filter__input" type="text" name="name" placeholder="Викторович">
-          </label>
+      <form class="catalog-filter__location" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="catalog-filter__container-one">
+          <div class="catalog-filter__padding">
+            <h2 class="catalog-filter__text-subtitle">Представьтесь:</h2>
+            <label class="catalog-filter__control catalog-filter__control-one">
+              <span class="catalog-filter__span">Имя*:</span>
+              <input class="catalog-filter__input" type="text" name="name" placeholder="Пётр">
+            </label>
+            <label class="catalog-filter__control catalog-filter__control-one">
+              <span class="catalog-filter__span">Фамилия*:</span>
+              <input class="catalog-filter__input" type="text" name="name" placeholder="Пустота">
+            </label>
+            <label class="catalog-filter__control catalog-filter__control-one">
+              <span class="catalog-filter__span">Отчество:</span>
+              <input class="catalog-filter__input" type="text" name="name" placeholder="Викторович">
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="catalog-filter__container-two">
-        <div class="catalog-filter__padding">
-          <h2 class="catalog-filter__text-subtitle">Контактная информация:</h2>
-          <label class="catalog-filter__control">
-            <span class="catalog-filter__span">Контактный телефон*:</span>
-            <div class="catalog-filter__div--location">
-              <div class="catalog-filter__registration-telephone">
-                <svg class="catalog-filter-telephone" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/>
-                </svg>
-              </div>
-              <input class="catalog-filter__input" type="text" name="name" placeholder="Введите телефон">
-            </div>
-          </label>
-          <label class="catalog-filter__control">
-            <span class="catalog-filter__span">Электронная почта*:</span>
-            <div class="catalog-filter__div--location">
-              <div class="catalog-filter__registration-letter">
-                <svg class="catalog-filter-letter" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/>
-                </svg>
-              </div>
-              <input class="catalog-filter__input" type="text" name="name" placeholder="Введите e-mail">
-            </div>
-          </label>
+        <div class="catalog-filter__container-two">
+          <div class="catalog-filter__padding">
+            <h2 class="catalog-filter__text-subtitle-text">Контактная информация:</h2>
+            <label class="catalog-filter__control catalog-filter__control-two">
+              <span class="catalog-filter__span">Контактный телефон*:</span>
+              <span class="catalog-filter__container-box--location">
+                <span class="catalog-filter__registration-telephone">
+                  <svg class="catalog-filter-telephone" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" fill="#010101"/>
+                  </svg>
+                </span>
+                <input class="catalog-filter__input catalog-filter__input-form-text" type="tel" name="name" placeholder="Введите телефон">
+              </span>
+            </label>
+            <label class="catalog-filter__control catalog-filter__control-two">
+              <span class="catalog-filter__span">Электронная почта*:</span>
+              <span class="catalog-filter__container-box--location">
+                <span class="catalog-filter__registration-letter">
+                  <svg class="catalog-filter-letter" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" fill="#000"/>
+                  </svg>
+                </span>
+                <input class="catalog-filter__input catalog-filter__input-form-text" type="email" name="name" placeholder="Введите e-mail">
+              </span>
+            </label>
+          </div>
         </div>
-      </div>
-      <fieldset class="catalog-filter__group-location">
-        <legend class="catalog-filter__text-subtitle">Вaше oбщее впечатление:</legend>
-          <ul class="catalog-filter__list-one">
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression" value="impression type"
-                    checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Скорее положительное</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item catalog-filter__item-label">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
-      <fieldset class="catalog-filter__group-location">
-        <legend class="catalog-filter__text-subtitle">Посещенные достопримечательности:</legend>
-          <ul class="catalog-filter__list-two">
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Мост дьявола"  checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Слайд-парк" checked>
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="catalog-filter__item">
-              <label class="catalog-filter__control">
-                <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Красные скалы">
-                <span class="catalog-filter__control-mark"></span>
-                <span class="catalog-filter__control-label">Красные скалы</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="catalog-filter__div">
+        <div class="catalog-filter__div--border">
           <fieldset class="catalog-filter__group-location">
-            <legend class="catalog-filter__text-subtitle catalog-filter__label-input">Опишите свои эмоции:</legend>
-            <input class="catalog-filter__input catalog-filter__input-form" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги" required>
-            <div class="catalog-filter__button-subtitle">
-              <button class="catalog-filter__button--to-apply button" type="submit">Отправить отзыв</button>
-              <p class="catalog-filter__subtitle-button">* — обязательные поля</p>
-            </div>
+            <legend class="catalog-filter__text-subtitle catalog-filter__text-subtitle-form catalog-filter__text-subtitle--before">
+              Вaше oбщее впечатление:</legend>
+              <ul class="catalog-filter__list-one">
+                <li class="catalog-filter__item catalog-filter__item-label">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression" value="impression type"
+                        checked>
+                    <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item catalog-filter__item-label-padding">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
+                    <span class="catalog-filter__control-mark catalog-filter__control-mark-padding"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-one">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item catalog-filter__item-label">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="radio" name="impression">
+                    <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-two">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
           </fieldset>
         </div>
+        <div class="catalog-filter__div--border-one">
+          <fieldset class="catalog-filter__group-location catalog-filter__group-location-padding">
+            <legend class="catalog-filter__text-subtitle catalog-filter__text-subtitle-padding-one catalog-filter__text-subtitle--before-one">
+              Посещенные достопримечательности:</legend>
+              <ul class="catalog-filter__list-two">
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Мост дьявола"  checked>
+                    <span class="catalog-filter__control-mark"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-size">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
+                    <span class="catalog-filter__control-mark catalog-filter__control-mark-one"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-three">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Слайд-парк" checked>
+                    <span class="catalog-filter__control-mark catalog-filter__control-mark-one catalog-filter__control-mark-new"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-for">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="catalog-filter__item">
+                  <label class="catalog-filter__control">
+                    <input class="catalog-filter__control-input visually-hidden" type="checkbox" name="Красные скалы">
+                    <span class="catalog-filter__control-mark catalog-filter__control-mark-one"></span>
+                    <span class="catalog-filter__control-label catalog-filter__control-label-five">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="catalog-filter__div">
+            <fieldset class="catalog-filter__group-location catalog-filter__group-location-text">
+              <legend class="catalog-filter__text-subtitle catalog-filter__label-input catalog-filter__text-subtitle--before-two">
+                Опишите свои эмоции:</legend>
+              <input class="catalog-filter__input-form" type="text" name="отзыв" placeholder="Опишите подробно все свои восторги" required>
+              <div class="catalog-filter__button-subtitle">
+                <button class="catalog-filter__button--to-apply button" type="submit">Отправить отзыв</button>
+                <p class="catalog-filter__subtitle-button">* — обязательные поля</p>
+              </div>
+            </fieldset>
+          </div>
+      </form>
     </section>
-  </form>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__social">
-        <p class="main-footer__hashtag">#visitsedona</p>
+      <div class="main-footer__social main-footer__social-form">
+        <p class="main-footer__hashtag main-footer__hashtag-form">#visitsedona</p>
         <b class="visually-hidden">Давайте дружить!</b>
-        <ul class="social-list">
+        <ul class="main-footer__social-list-form social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden"> Мы в Вконтакте</span>
@@ -190,7 +201,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy" ">
+            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m22.44 4.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192L7.022 13.314 2.26 11.823c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z" fill="#fff"/>
@@ -210,8 +221,8 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано:
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__svg--color" width="27" height="35" aria-label="Логотип HTML Академии" focusable="folse">
-              <use href="/img/sprite.svg#logo-html"></use>
+            <svg class="copyright__svg copyright__svg--color" width="27" height="35" aria-label="Логотип HTML Академии">
+              <use href="/img/image/sprite/htmlacademy.svg#logo-html"></use>
             </svg>
           </a>
         </div>

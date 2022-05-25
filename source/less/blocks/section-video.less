@@ -24,31 +24,38 @@
   line-height: 21px;
   color: @heading-text-color;
   text-transform: uppercase;
-  padding: 0 20px 0;
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 260px;
+
 
   @media (min-width: @tablet-width) {
     padding: 0 100px 0;
     margin-bottom: 90px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 170px;
+    width: 450px;
   }
 }
 
 .section-video {
-  padding: 43px 20px 25px;
+  padding: 43px 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 50px 45px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 55px 200px 110px;
+    padding: 60px 200px 120px;
   }
 }
 
 .section-video__div {
   position: relative;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 177px;
+
+  @media (min-width: @tablet-width) {
+    height: 500px;
+  }
 }

@@ -9,10 +9,15 @@
   <link rel="icon" href="img/image/svg/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/image/png/favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/image/png/logo.png" as="image">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img src="img/image/png/logo.png" width="185" height="96" alt="Седона">
     </a>
       <nav class="main-nav--closed  main-nav--nojs main-nav">
@@ -57,11 +62,13 @@
     </section>
     <ul class="main-container__item--registration list">
       <li class="list__item--location list__item-grid">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/image/jpg/photo-1-desktop.jpg, img/image/jpg/photo-1-desktop@2x.jpg">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/image/jpg/photo-1-tablet.jpg, img/image/jpg/photo-1-tablet@2x.jpg">
-          <img class="main-container__img-photo" type="image/webp" src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg" alt="Неродные просторы">
-        </picture>
+        <a href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/image/jpg/photo-1-desktop.jpg 1x, img/image/jpg/photo-1-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/image/jpg/photo-1-tablet.jpg 1x, img/image/jpg/photo-1-tablet@2x.jpg 2x">
+            <img class="main-container__img-photo" loading="lazy" src="img/image/jpg/photo-1-mobile.jpg" srcset="img/image/jpg/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+          </picture>
+        </a>
         <div class="list__div">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Неродные просторы</h2>
@@ -76,11 +83,13 @@
         </div>
       </li>
       <li class="list__item--location">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-2-desktop.jpg, img/image/jpg/photo-2-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/image/jpg/photo-2-tablet.jpg, img/image/jpg/photo-2-tablet@2x.jpg">
-          <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-2-mobile.jpg.jpg"  srcset="img/image/jpg/photo-2-mobile.jpg@2x.jpg" alt="Местная растительность">
-        </picture>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-2-desktop.jpg 1x, img/image/jpg/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/image/jpg/photo-2-tablet.jpg 1x, img/image/jpg/photo-2-tablet@2x.jpg 2x">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-2-mobile.jpg.jpg"  srcset="img/image/jpg/photo-2-mobile.jpg@2x.jpg 2x" alt="Местная растительность">
+          </picture>
+        </a>
         <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Местная растительность</h2>
@@ -95,11 +104,13 @@
         </div>
       </li>
       <li class="list__item--location list__item--color list__item--location-img">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-3-desktop.jpg, img/image/jpg/photo-3-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/image/jpg/photo-3-tablet.jpg, img/image/jpg/photo-3-tablet@2x.jpg">
-          <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-3-mobile.jpg"  srcset="img/image/jpg/photo-3-mobile@2x.jpg" alt="Дорога на север">
-        </picture>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-3-desktop.jpg 1x, img/image/jpg/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/image/jpg/photo-3-tablet.jpg 1x, img/image/jpg/photo-3-tablet@2x.jpg 2x">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-3-mobile.jpg"  srcset="img/image/jpg/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+          </picture>
+        </a>
         <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Дорога на север</h2>
@@ -114,11 +125,13 @@
         </div>
       </li>
       <li class="list__item--location list__item-grid-row list__item--location-img">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-4-desktop.jpg, img/image/jpg/photo-4-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/image/jpg/photo-4-tablet.jpg, img/image/jpg/photo-4-tablet@2x.jpg">
-          <img class="main-container__img-photo main-container__img-photo-one" src="img/image/jpg/photo-4-mobile.jpg"  srcset="img/image/jpg/photo-4-mobile@2x.jpg" alt="Мост дьявола">
-        </picture>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/image/jpg/photo-4-desktop.jpg 1x, img/image/jpg/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/image/jpg/photo-4-tablet.jpg 1x, img/image/jpg/photo-4-tablet@2x.jpg 2x">
+            <img class="main-container__img-photo main-container__img-photo-one" loading="lazy" src="img/image/jpg/photo-4-mobile.jpg"  srcset="img/image/jpg/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+          </picture>
+        </a>
         <div class="list__div list__div-location">
           <div class="list__div-location-text">
             <h2 class="list__desc-subtitle">Мост дьявола</h2>
@@ -138,9 +151,9 @@
       <p class="section-video-text-subtitle--location">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="section-video__div">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/image/jpg/video-desktop.jpg, img/image/jpg/video-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/image/jpg/video-tablet.jpg, img/image/jpg/video-tablet@2x.jpg">
-          <img class="main-container__img-video" src="img/image/jpg/video-mobile.jpg.jpg"  srcset="img/image/jpg/video-mobile.jpg@2x.jpg" alt="Видео">
+          <source media="(min-width: 1200px)" srcset="img/image/jpg/video-desktop.jpg 1x, img/image/jpg/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/image/jpg/video-tablet.jpg 1x, img/image/jpg/video-tablet@2x.jpg 2x">
+          <img class="main-container__img-video" loading="lazy" src="img/image/jpg/video-mobile.jpg.jpg"  srcset="img/image/jpg/video-mobile.jpg@2x.jpg 2x" alt="Видео">
         </picture>
         <svg class="main-container__img-svg" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7"/>
@@ -150,10 +163,9 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__social">
-        <p class="main-footer__hashtag">#visitsedona</p>
-        <b class="visually-hidden">Давайте дружить!</b>
-        <ul class="social-list">
+      <div class="main-footer__social-catalog">
+        <p class="main-footer__hashtag main-footer__hashtag-catalog">#visitsedona</p>
+        <ul class=" social-list main-footer__social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden"> Мы в Вконтакте</span>
@@ -163,7 +175,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy" ">
+            <a class="social-list__link social-list__link--youtube" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m22.44 4.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.558-2.33 2.242c-.258.258-.473.473-.97.473l.347-4.917 8.948-8.086c.39-.346-.084-.54-.604-.192L7.022 13.314 2.26 11.823c-1.036-.323-1.055-1.036.216-1.533l18.627-7.177c.863-.323 1.617.192 1.336 1.51Z" fill="#fff"/>
@@ -179,12 +191,12 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
+        <div class="main-footer__copyright-catalog copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано:
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__svg--color" width="27" height="35" aria-label="Логотип HTML Академии" focusable="folse">
-              <use href="/img/sprite.svg#logo-html"></use>
+            <svg class="copyright__svg copyright__svg--color" width="27" height="35" aria-label="Логотип HTML Академии">
+              <use href="/img/image/sprite/htmlacademy.svg#logo-html"></use>
             </svg>
           </a>
         </div>

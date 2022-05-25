@@ -38,7 +38,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 648px;
     padding: 0 51px 0;
     margin: 0 auto;
   }
@@ -74,12 +73,15 @@
 .main-container__img-video {
   width: 100%;
   position: relative;
-  min-height: 500px;
-  min-width: 800px;
+  height: 177px;
+
+  @media (min-width: @tablet-width) {
+    height: 500px;
+  }
 }
 
 .main-container__img-photo {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -147,18 +149,10 @@
 
 .main-container__img-svg {
   position: absolute;
-  right: 300px;
-  top: 270px;
-
-  @media (min-width: @tablet-width) {
-    right: 280px;
-    top: 270px;
-  }
-
-  @media (min-width: @desktop-width) {
-    right: 370px;
-    top: 230px;
-  }
+  left: 50%;
+  top: 50%;
+  margin-left: -24px;
+  margin-top: -27px;
 }
 
 .main-container__img-photo-one {

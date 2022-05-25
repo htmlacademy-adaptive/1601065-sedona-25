@@ -1,5 +1,13 @@
 .section-form {
-  padding: 36px 7px 53px;
+  padding: 36px 7px 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 7px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 7px 65px;
+  }
 }
 
 .section-form__text-subtitle {
@@ -13,6 +21,15 @@
   padding: 0;
   text-transform: uppercase;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .section-form__subtitle {
@@ -21,6 +38,17 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  width: 300px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 440px;
+  }
 }
