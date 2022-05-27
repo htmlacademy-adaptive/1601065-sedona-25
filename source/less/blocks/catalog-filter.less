@@ -59,8 +59,8 @@
     flex-wrap: wrap;
     padding: 0;
     padding-top: 20px;
-    padding-left: 150px;
     min-width: 1000px;
+    padding-left: 150px;
   }
 }
 
@@ -99,11 +99,11 @@
     font-size: 21px;
     padding: 0 0 25px;
     width: 320px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 85px;
+    padding-left: 25px;
     position: relative;
   }
 }
@@ -350,6 +350,8 @@
 .catalog-filter__div {
   grid-column-start: 1;
   grid-column-end: 4;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: @desktop-width) {
     padding: 0 96px 0;
@@ -364,7 +366,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 90px;
+    padding-right: 30px;
   }
 }
 
@@ -474,6 +476,10 @@
     border: none;
     display: flex;
     justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
   }
 }
 
@@ -592,7 +598,7 @@
 
 .catalog-filter__text-subtitle-form {
   @media (min-width: @desktop-width) {
-    padding-right: 85px;
+    padding-right: 30px;
   }
 }
 
@@ -611,7 +617,7 @@
 
 .catalog-filter__text-subtitle-padding-one {
   @media (min-width: @desktop-width) {
-    padding-right: 130px;
+    padding-right: 70px;
   }
 }
 
